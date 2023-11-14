@@ -177,4 +177,5 @@ At this time, there are no known bugs.
 
 ## Author
 @ [Kenrique Ngwa](https://github.com/kenrique100)
+@ [ Palesa Monareng](https://github.com/Mbarleesah)
 
