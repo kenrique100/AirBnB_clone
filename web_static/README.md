@@ -65,3 +65,5 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 - Current screenshots have been done on Chrome 56 or more.
 - No cross browsers
 - You have to follow all requirements but some margin/padding are missing - you should try to fit as much as you can to screenshots
+
+<img src="https://camo.githubusercontent.com/97788fc5310cea2961d9d8dbfa9cb4b6aacd420eb1efb27372af451d7f04b7a7/68747470733a2f2f692e696d6775722e636f6d2f6f764d4e79455a2e706e67" width="1500" height="300">
