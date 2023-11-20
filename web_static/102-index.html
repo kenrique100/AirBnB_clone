@@ -1,89 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Ian Liu-Johnston">
-
-    <title>HTML Exercises</title>
-
-    <link rel="stylesheet" href="styles/4-common.css">
-    <link rel="stylesheet" href="styles/3-header.css">
-    <link rel="stylesheet" href="styles/3-footer.css">
-    <link rel="stylesheet" href="styles/6-filters.css">
-    <link rel="stylesheet" href="styles/100-places.css">
-    <link rel="icon" href="images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/102-common.css">
+    <link rel="stylesheet" href="styles/102-header.css">
+    <link rel="stylesheet" href="styles/102-footer.css">
+    <link rel="stylesheet" href="styles/102-filters.css">
+    <link rel="stylesheet" href="styles/102-places.css">
+    <title>AirBnB clone</title>
 </head>
 
 <body>
     <header>
+        <div class="mobile_nav">
+            <label for="main_check" class="main_nav_burguer">|||</label>
+            <input type="checkbox" id="main_check" name="main_check" class="main_nav_check">
+            <nav>
+                <ul class="nav_bar_level1">
+                    <li>
+                        <label for="second_check"><span>States</span></label>
+                        <input type="checkbox" name="second_check" id="second_check">
+                        <ul>
+                            <h2><span>Constituant</span></h2>
+                            <li><span>California</span></li>
+                            <li><span>New York</span></li>
+                            <li><span>Arizona</span></li>
+                            <li><span>Washington</span></li>
+                            <li><span>New Mexico</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="third_check"><span>Amenities</span></label>
+                        <input type="checkbox" name="second_check" id="third_check">
+                        <ul>
+                            <li><span>Wifi</span></li>
+                            <li><span>Low Crime Rate</span></li>
+                            <li><span>Television</span></li>
+                            <li><span>Clean Air</span></li>
+                            <li><span>Pet Friendly</span></li>
+                            <li><span>Handcuffs</span></li>
+                            <li><span>High Crime Rates</span></li>
+                            <li><span>Hot Tub</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- final del main_nav_bar -->
+        </div>
     </header>
-    <div class="container">
+    <di class="container">
         <section class="filters">
             <div class="locations">
                 <h3>States</h3>
                 <h4>California, Arizona...</h4>
-                <div class="popover">
-                    <ul>
-                        <>
-                            <h2>Constituant</h2>
-                            <li>California</li>
-                            <li>New York</li>
-                            <li>Arizona</li>
-                            <li>Washington</li>
-                            <li>New Mexico</li>
-                    </ul>
-                </div>
+                <ul class="popover">
+                    <li>
+                        <h2>Arizona:</h2>
+                        <ul>
+                            <li>Page</li>
+                            <li>Page2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>California:</h2>
+                        <ul>
+                            <li>San Francisco</li>
+                            <li>Los Altos</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div class="amenities">
                 <h3>Amenities</h3>
                 <h4>Internet, Kitchen...</h4>
-                <div class="popover">
-                    <ul>
-                        <li>Wifi</li>
-                        <li>Low Crime Rate</li>
-                        <li>Television</li>
-                        <li>Clean Air</li>
-                        <li>Pet Friendly</li>
-                        <li>Handcuffs</li>
-                        <li>High Crime Rates</li>
-                        <li>Hot Tub</li>
-                    </ul>
-                </div>
+                <ul class="popover">
+                    <li>Internet</li>
+                    <li>Tv</li>
+                    <li>Kitchen</li>
+                    <li>Iron</li>
+                </ul>
             </div>
-            <button>Search</button>
+            <button type="button" name="button">Search</button>
         </section>
+        <!-- end fiter-->
+
         <section class="places">
             <h1>Places</h1>
             <article>
-                <h2>Foil-Covered Yurt</h2>
-                <div class="price_by_night">
-                    <h3>$80</h3>
+                <!-- My home -->
+                <div class="article_places_header">
+                    <h2>My home</h2>
+                    <div class="price_by_night">$80</div>
                 </div>
                 <div class="information">
-                    <div class="max_guest">
-                        <p>1-2 Guests</p>
-                    </div>
-                    <div class="number_rooms">
-                        <p>1 Room</p>
-                    </div>
-                    <div class="number_bathrooms">
-                        <p>N/A</p>
-                    </div>
+                    <div class="max_guest">1-2 Guests</div>
+                    <div class="number_rooms">1 Room</div>
+                    <div class="number_bathrooms">1 Room</div>
                 </div>
+                <!-- end information -->
                 <div class="user">
-                    <p><strong>Owner</strong>: Jason Bob</p>
+                    <p><b>Owner:</b> Jason Bob</p>
                 </div>
+                <!-- end user -->
                 <div class="description">
                     <p>I made this yurt out of Stereo-foam bout ten years ago.The door's been freshly taped back with some duck tape so no more midnight chills. it's in my backyard and my dog's real friendly, so don't be surprised if you wake up and he's
-                        sleeping in your bed for warmth
+                        sleeping in your bed for warmth</p>
                 </div>
+                <!-- end description -->
                 <div class="amenities">
+                    <h2>Amenities</h2>
                     <ul>
-                        <h2>Amenities</h2>
-                        <li class="icon_stove">BBQ</li>
-                        <li class="icon_pets">Pet Friendly</li>
-                        <li class="icon_low_crime">Low Crime Rates</li>
+                        <li>
+                            <div class="places_amenities_pet_friendly"></div>
+                            Pet friendly
+                        </li>
+                        <li>
+                            <div class="places_amenities_tv"></div>
+                            Tv
+                        </li>
+                        <li>
+                            <div class="places_amenities_wifi"></div>
+                            Wifi
+                        </li>
                     </ul>
                 </div>
                 <div class="reviews">
@@ -102,40 +143,53 @@
                     </ul>
                 </div>
             </article>
+            <!-- end My home -->
+
             <article>
-                <h2>Historic Houseboat</h2>
-                <div class="price_by_night">
-                    <h3>$65</h3>
-                </div>
+                <h2>Tiny house</h2>
+                <div class="price_by_night">$65</div>
                 <div class="information">
-                    <div class="max_guest">
-                        <p>500 Guests</p>
-                    </div>
-                    <div class="number_rooms">
-                        <p>75 Rooms</p>
-                    </div>
-                    <div class="number_bathrooms">
-                        <p>Everywhere</p>
-                    </div>
+                    <div class="max_guest">500 Guests</div>
+                    <div class="number_rooms">75 Bedrooms</div>
+                    <div class="number_bathrooms">1 Bathroom</div>
                 </div>
+                <!-- end information -->
                 <div class="user">
-                    <p><strong>Owner</strong>: Kenrique Ngwa</p>
+                    <p><b>Owner:</b> Kenrique Ngwa</p>
                 </div>
+                <!-- end user -->
                 <div class="description">
                     <p>This sunken battleship used to belong the the Turkish Navy in the 11th Century AD. It is located in the scenic Mariana Trench where guests enjoy several furlongs of crushing water. The pristine view from the ports-side hull is one
                         of the best in the ocean. Ample float-sum drifts from the upper depths, so opportunities for souvenirs from the surface are practically boundless.</p>
                 </div>
+                <!-- end description -->
                 <div class="amenities">
+                    <h2>Amenities</h2>
                     <ul>
-                        <h2>Amenities</h2>
-                        <li class="icon_wifi">Wifi</li>
-                        <li class="icon_tv">Television</li>
-                        <li class="icon_pets">Pet Friendly</li>
-                        <li class="icon_hottub">Hot Tub</li>
+                        <li>
+                            <div class="places_amenities_pet_friendly"></div>
+                            Pet friendly
+                        </li>
+                        <li>
+                            <div class="places_amenities_wifi"></div>
+                            Wifi
+                        </li>
+                        <li>
+                            <div class="places_amenities_tv"></div>
+                            Television
+                        </li>
+                        <li>
+                            <div class="icon_hottub"></div>
+                            Hot Tub
+                        </li>
+                        <li>
+                            <div class="icon_high_crime"></div>
+                            High crimes
+                        </li>
                     </ul>
                 </div>
                 <div class="reviews">
-                    <h2>Reviews</h2>
+                    <h2>Review</h2>
                     <ul>
                         <li>
                             <h3>Jason's club</h3>
@@ -165,40 +219,48 @@
                     </ul>
                 </div>
             </article>
+
             <article>
-                <h2>Basement Suite</h2>
-                <div class="price_by_night">
-                    <h3>$190</h3>
-                </div>
+                <h2>A suite</h2>
+                <div class="price_by_night">$190</div>
                 <div class="information">
-                    <div class="max_guest">
-                        <p>5 Guests</p>
-                    </div>
-                    <div class="number_rooms">
-                        <p>1 Room</p>
-                    </div>
-                    <div class="number_bathrooms">
-                        <p>1 Bathroom</p>
-                    </div>
+                    <div class="max_guest">5 Guests</div>
+                    <div class="number_rooms">1 Bedroom</div>
+                    <div class="number_bathrooms">1 Bathroom</div>
                 </div>
+                <!-- end information -->
                 <div class="user">
-                    <p><strong>Owner</strong>: Jason Chen</p>
+                    <p><b>Owner:</b> Jason Chen</p>
                 </div>
+                <!-- end user -->
                 <div class="description">
                     <p>You need to be locked up somewhere to think about what you've done. Why not spend it with a fellow convict? We have all the amenities you need here: rats to eat, other prisoners to fight with for scraps of bread, lots of moist moss
                         to suck moisture from, chains to rattle and space to reflect on what you've done.</p>
                 </div>
+                <!-- end description -->
                 <div class="amenities">
+                    <h2>Amenities</h2>
                     <ul>
-                        <h2>Amenities</h2>
-                        <li class="icon_handcuffs">Complementary Handcuffs</li>
-                        <li class="icon_high_crime">High Crime Rates</li>
-                        <li class="icon_pets">Pet Friendly</li>
-                        <li class="icon_hottub">Hot Tub</li>
+                        <li>
+                            <div class="places_amenities_pet_friendly"></div>
+                            Pet friendly
+                        </li>
+                        <li>
+                            <div class="places_amenities_tv"></div>
+                            Tv
+                        </li>
+                        <li>
+                            <div class="places_amenities_wifi"></div>
+                            Wifi
+                        </li>
+                        <li>
+                            <div class="icon_handcuffs"></div>
+                            Convicted
+                        </li>
                     </ul>
                 </div>
                 <div class="reviews">
-                    <h2>Reviews</h2>
+                    <h2>Review</h2>
                     <ul>
                         <li>
                             <h3>Jack_Reacher</h3>
@@ -218,11 +280,66 @@
                     </ul>
                 </div>
             </article>
+            <article>
+                <!-- My home -->
+                <div class="article_places_header">
+                    <h2>Leke Island</h2>
+                    <div class="price_by_night">$80</div>
+                </div>
+                <div class="information">
+                    <div class="max_guest">8 Guests</div>
+                    <div class="number_rooms">1 Bedroom</div>
+                    <div class="number_bathrooms">1 Bathroom</div>
+                </div>
+                <!-- end information -->
+                <div class="user">
+                    <p><b>Owner:</b>Micheal Jack</p>
+                </div>
+                <!-- end user -->
+                <div class="description">
+                    <p>This is a lovely 1 bathroom apartment that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jungan Temle.</p>
+                </div>
+                <!-- end description -->
+                <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>
+                            <div class="places_amenities_pet_friendly"></div>
+                            Pet friendly
+                        </li>
+                        <li>
+                            <div class="places_amenities_tv"></div>
+                            Tv
+                        </li>
+                        <li>
+                            <div class="places_amenities_wifi"></div>
+                            Wifi
+                        </li>
+                    </ul>
+                </div>
+                <div class="reviews">
+                    <h2>Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Bob Dylan the 27th August 2022</h3>
+                            <p>Runshi is an epic host. Nothing more i can say. 5 star!</p>
+                        </li>
+                        <li>
+                            <h3>From Connor 4th August 2022</h3>
+                            <p>Higly recommended!</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- end My home -->
+
+
         </section>
-    </div>
-    <footer>
-        <p>Best School</p>
-    </footer>
+        <!-- end section -->
+        </div>
+        <footer>
+            <p>Best School</p>
+        </footer>
 </body>
 
 </html>
